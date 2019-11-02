@@ -1,17 +1,30 @@
 <div class="container">
   <div style="font-family:'Roboto',serif;font-weight: 800;">Sectors(in line table)</div>
+  <div>
+    <table style="width:55%">
+      <tr *ngIf="tableData" >
+        <th>Country <img src="../../../assets/u38.png"></th>
+        <th>%</th>
+      </tr>
+      <tr *ngFor="let item of tableData">
+        <td>{{item.sector}}</td>
+        <td>{{item.percentage}}</td>
+      </tr>
 
-  <div style="display: flex; align-items: center; flex-direction: row; margin: 0 !important;">
+    </table>
+  </div>
+  <div style="display: flex; align-items: flex-end; flex-direction: row; margin: 0 !important;">
     <div class="implStatus">
       <label for="implStatus">Implementation Status</label>
       <select id="implStatus">
-        <option *ngFor="let x of data" [value]="x" style="padding: 12px">{{x}}</option>
+        <option *ngFor="let x of selectiveData" [value]="x" style="padding: 12px">{{x}}</option>
       </select>
     </div>
 
     <div>
-      <label for="duration">Duration</label>
-      <input type="text" id="duration">
+      <label for="perc"> </label>
+      <input type="text" id="perc">
     </div>
+    <button class="button">ADD</button>
   </div>
 </div>

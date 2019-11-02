@@ -1,6 +1,19 @@
 *{
   font-family: "Helvetica", arial, sans-serif;
-  font-size: 18px;
+  font-size: 15px;
+}
+ td {
+  border: 1px solid black;
+}
+ table{
+   border-collapse: collapse;
+ }
+th, td {
+  padding: 5px;
+  text-align: left;
+}
+td{
+  padding:12px;
 }
 input , select{
   padding: 12px 20px;
@@ -61,4 +74,16 @@ input[type="date"], focus {
   box-shadow: none;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
+}
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 12px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 15px;
+  cursor: pointer;
 }
