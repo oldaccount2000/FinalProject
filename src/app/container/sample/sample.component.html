@@ -1,0 +1,39 @@
+
+
+<div class="container">
+<div style="font-family:'Roboto',serif;font-weight: 800;">SAMPLE</div>
+    <div style="display: flex; align-items: center; flex-direction: row; margin: 0 !important;">
+      <div class="project-code">
+        <label for="project-code">Project Code <span style="color: red"> *</span></label>
+        <input type="text" id="project-code" >
+      </div>
+      <div class="project-name">
+        <label for="project-name">Project Title<span style="color: red"> *</span></label>
+        <input type="text" id="project-name"  >
+      </div>
+    </div>
+    <div class="description" >
+      <label for="project-name">Description</label>
+      <input type="text" id="description" style="height: 100px" >
+    </div>
+  <div style="display: flex; align-items: center; flex-direction: row; margin: 0 !important;">
+    <div class="implStatus">
+      <label for="implStatus">Implementation Status<span style="color: red"> *</span></label>
+      <select  id="implStatus">
+        <option *ngFor="let x of data" [value]="x" style="padding: 12px">{{x}}</option>
+      </select>
+    </div>
+    <div>
+      <label for="startDate">Planned Start Date <span style="color: red"> *</span></label>
+      <input type="date" id="startDate">
+    </div>
+    <div>
+      <label for="endDate">Planned End Date</label>
+      <input type="date" id="endDate">
+    </div>
+    <div>
+      <label for="duration">Duration</label>
+      <input type="text" id="duration">
+    </div>
+  </div>
+</div>
